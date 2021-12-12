@@ -12,7 +12,7 @@ public class Receiver extends Player
 {
 
 	public Receiver(String first, String last, String team, String position
-			, int receptions, double yards) 
+			, int receptions, int yards) 
 	{
 		super(first, last, team, position, receptions, yards);
 		this.first = first;

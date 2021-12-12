@@ -12,7 +12,7 @@ public class Quarterback extends Player
 {
 
 	public Quarterback(String first, String last, String team, String position,
-			int completions, int attempts, double yards) 
+			int completions, int attempts, int yards) 
 	{
 		super(first, last, team, position, completions
 				, attempts, yards);
@@ -34,7 +34,7 @@ public class Quarterback extends Player
 	}
 	public double yardsPerGame()
 	{
-		return (yards / 16.0);
+		return ((double)yards / 16.0);
 	}
 
 }

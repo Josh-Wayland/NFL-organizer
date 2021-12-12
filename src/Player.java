@@ -16,10 +16,10 @@ public class Player implements Comparable<Player>
 	String position;
 	int completions;
 	int attempts;
-	double yards;
+	int yards;
 	int receptions;
 	public Player(String first, String last, String team, 
-			String position, int receptions, double yards)
+			String position, int receptions, int yards)
 	{
 		super();
 		this.first = first;
@@ -30,7 +30,7 @@ public class Player implements Comparable<Player>
 		this.yards = yards;
 	}
 	public Player(String first, String last, String team, 
-			String position, int completions, int attempts, double yards)
+			String position, int completions, int attempts, int yards)
 	{
 		super();
 		this.first = first;
@@ -59,7 +59,7 @@ public class Player implements Comparable<Player>
 	public int getAttempts() {
 		return attempts;
 	}
-	public double getYards() {
+	public int getYards() {
 		return yards;
 	}
 	public int getReceptions() {

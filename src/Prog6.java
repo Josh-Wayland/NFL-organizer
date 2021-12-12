@@ -21,7 +21,7 @@ public class Prog6 {
 		String position = null;
 		int completions = 0;
 		int attempts = 0;
-		double yards = 0;
+		int yards = 0;
 		int receptions = 0;
 		Scanner inFile = null;
 		int count = 0;
@@ -49,7 +49,7 @@ public class Prog6 {
 				{
 					completions = inFile.nextInt();
 					attempts = inFile.nextInt();
-					yards = inFile.nextDouble();
+					yards = inFile.nextInt();
 					Quarterback qb = new Quarterback(first, last, team,
 							position, completions, attempts, yards);
 					players[count] = qb;
@@ -57,7 +57,7 @@ public class Prog6 {
 				else if( position.equals( "WR" ) )
 				{
 					receptions = inFile.nextInt();
-					yards = inFile.nextDouble();
+					yards = inFile.nextInt();
 					Receiver wr = new Receiver(first, last, team
 							, position, receptions, yards);
 					players[count] = wr;
@@ -81,7 +81,7 @@ public class Prog6 {
 			if(players[i] instanceof Quarterback)
 			{
 				String lastname = players[i].getLast() + ",";
-				System.out.printf("%-15s %-10s  %-5s  %d  %d  %.1f  %.0f   %.2f    %.2f\n" ,
+				System.out.printf("%-15s %-10s  %-5s  %d  %d  %.1f  %d   %.2f    %.2f\n" ,
 						lastname, players[i].getFirst(),
 						players[i].getTeam(), players[i].getCompletions(),
 						players[i].getAttempts(),
@@ -92,14 +92,14 @@ public class Prog6 {
 			}
 		}
 		System.out.println("\nWide Receivers");
-		System.out.println("\nPlayer                     Team  Rec"
-				+ "     Yds   Avg   Yds/G");
+		System.out.println("\nPlayer                     Team   Rec"
+				+ "    Yds   Avg   Yds/G");
 		for(int i = 0; i < players.length; i++)
 		{
 			String lastname = players[i].getLast() + ",";
 			if(players[i] instanceof Receiver)
 			{
-				System.out.printf("%-15s %-10s %-5s %d   %.0f  %.1f  %.1f\n"
+				System.out.printf("%-15s %-10s %-5s %4d   %4d  %4.1f   %3.1f\n"
 						,lastname, players[i].getFirst()
 						,players[i].getTeam(),
 						((Receiver)players[i]).getReceptions()
