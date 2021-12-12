@@ -1,0 +1,20 @@
+Larry Fitzgerald ARI WR 109 1156 
+Matt Ryan ATL QB 342 529 4095
+Julio Jones ATL WR 88 1444 
+Joe Flacco BAL QB 352 549 3141
+Demaryius Thomas DEN WR 83 949 
+Matthew Stafford DET QB 371 565 4446
+Golden Tate DET WR 92 1003 
+DeAndre Hopkins HOU WR 96 1378 
+Philip Rivers LAC QB 360 575 4515
+Keenan Allen LAC WR 102 1393 
+Jarvis Landry MIA WR 112 987 
+Adam Thielen MIN WR 91 1276 
+Tom Brady NE QB 385 581 4577
+Drew Brees NO QB 386 536 4334
+Michael Thomas NO WR 104 1245 
+Eli Manning NYG QB 352 571 3468
+Ben Roethlisberger PIT QB 360 561 4251
+Antonio Brown PIT WR 101 1533 
+Russell Wilson SEA QB 339 553 3983
+Kirk Cousins WAS QB 347 540 4093
