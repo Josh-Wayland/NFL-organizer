@@ -80,8 +80,9 @@ public class Prog6 {
 		{
 			if(players[i] instanceof Quarterback)
 			{
-				System.out.printf("%-15s, %-10s  %-5s  %d  %d  %.1f  %.0f   %.2f    %.2f\n" ,
-						players[i].getLast(), players[i].getFirst(),
+				String lastname = players[i].getLast() + ",";
+				System.out.printf("%-15s %-10s  %-5s  %d  %d  %.1f  %.0f   %.2f    %.2f\n" ,
+						lastname, players[i].getFirst(),
 						players[i].getTeam(), players[i].getCompletions(),
 						players[i].getAttempts(),
 						((Quarterback)players[i]).percent(),
@@ -95,10 +96,11 @@ public class Prog6 {
 				+ "     Yds   Avg   Yds/G");
 		for(int i = 0; i < players.length; i++)
 		{
+			String lastname = players[i].getLast() + ",";
 			if(players[i] instanceof Receiver)
 			{
-				System.out.printf("%-15s, %-10s %-5s %d   %.0f  %.1f  %.1f\n"
-						,players[i].getLast(), players[i].getFirst()
+				System.out.printf("%-15s %-10s %-5s %d   %.0f  %.1f  %.1f\n"
+						,lastname, players[i].getFirst()
 						,players[i].getTeam(),
 						((Receiver)players[i]).getReceptions()
 						,players[i].getYards(),
